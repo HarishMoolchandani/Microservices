@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+
+  accounts:
+    image: accounts:0.0.1-SNAPSHOT
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+      - "8081:8080"
+    networks:
+      - eazybank-network
+    
+networks:
+  eazybank-network:
